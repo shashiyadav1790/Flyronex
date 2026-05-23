@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function About() {
   return (
     <div className="bg-[#020617] text-white overflow-hidden">
@@ -413,6 +414,9 @@ export default function About() {
                 and unforgettable destinations today.
               </p>
 
+             <Link
+             to="/destinations"
+             >
               <button className="
                 mt-2
                 px-6 py-3
@@ -428,6 +432,7 @@ export default function About() {
               ">
                 Explore Packages
               </button>
+              </Link>
 
             </div>
 

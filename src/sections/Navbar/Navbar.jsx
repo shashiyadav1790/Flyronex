@@ -137,10 +137,13 @@ const Navbar = () => {
                   
                 "
               />
-
+              <Link
+              to="/contact"
+              >
               <span className="relative z-10 ">
                  &nbsp; Book Flight &nbsp;
               </span>
+              </Link>
               
             </motion.button>
 

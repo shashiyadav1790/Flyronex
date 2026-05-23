@@ -3,6 +3,7 @@ import gsap from "gsap";
 import plane from "../../assets/airplane.png";
 import Comment from "./Comment";
 import Globe from "./Globe";
+import { Link } from "react-router-dom";
 const Hero = () => {
 
   const planeRef1 = useRef(null);
@@ -75,6 +76,7 @@ const Hero = () => {
         loading="eager"
         decoding="async"
         className="
+        will-change-transform
         absolute
         top-[9%]
         right-[-200px]
@@ -83,6 +85,7 @@ const Hero = () => {
         lg:w-[300px]
         pointer-events-none
         select-none
+
       "
       />
 
@@ -166,7 +169,8 @@ const Hero = () => {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 items-center ">
 
-          <button
+          <Link
+          to="/packages"
             className="
             px-8
             py-3
@@ -183,9 +187,10 @@ const Hero = () => {
           "
           >
             Book Flight ✈️
-          </button>
+          </Link>
 
-          <button
+          <Link
+          to="/destinations"
             className="
             px-8
             py-3
@@ -203,7 +208,7 @@ const Hero = () => {
           "
           >
             Explore Deals
-          </button>
+          </Link>
 
         </div>
 
@@ -321,8 +326,7 @@ const Hero = () => {
 
           </div>
 
-        </div>
-        <section className="max-w-6xl mx-auto px-6 py-12 text-center bg-sky-500/10 border rounded-3xl">
+           <section className="max-w-6xl mx-auto px-6 py-12 text-center bg-sky-500/10 border rounded-3xl mt-10">
           <h2 className="text-3xl font-bold mb-4 text-white">
             Why Choose <span className="text-yellow-400">Us?</span>
           </h2>
@@ -333,6 +337,9 @@ const Hero = () => {
 
         <Comment/>
 
+
+        </div>
+       
         
 
 

@@ -1,4 +1,16 @@
 import { useNavigate } from "react-router-dom";
+
+import {
+  Plane,
+  ArrowRight,
+  MapPin,
+  Star,
+  ShieldCheck,
+  Headphones,
+  BadgeDollarSign,
+  Zap,
+} from "lucide-react";
+
 import dubaiImg from "../../assets/destinations/dubai.webp";
 import parisImg from "../../assets/destinations/paris.webp";
 import maldivesImg from "../../assets/destinations/maldives.webp";
@@ -7,235 +19,383 @@ import tokyoImg from "../../assets/destinations/tokyo.webp";
 import indiaImg from "../../assets/destinations/india.webp";
 
 export default function Destinations() {
+
   const navigate = useNavigate();
 
-const destinations = [
-  {
-    name: "Dubai",
-    image: dubaiImg,
-    desc: "Luxury escape",
-    price: "₹45,999",
-  },
-
-  {
-    name: "Paris",
-    image: parisImg,
-    desc: "Romantic city",
-    price: "₹62,999",
-  },
-
-  {
-    name: "Maldives",
-    image: maldivesImg,
-    desc: "Beach paradise",
-    price: "₹39,999",
-  },
-
-  {
-    name: "London",
-    image: londonImg,
-    desc: "Royal city",
-    price: "₹70,999",
-  },
-
-  {
-    name: "Tokyo",
-    image: tokyoImg,
-    desc: "Future city",
-    price: "₹85,999",
-  },
-
-  {
-    name: "India",
-    image: indiaImg,
-    desc: "Heritage",
-    price: "₹9,999",
-  },
-];
-
-  const whyChoose = [
+  const destinations = [
     {
-      title: "Best Price Guarantee",
-      desc: "We ensure you always get the lowest flight prices.",
-      icon: "💰",
+      name: "Dubai",
+      image: dubaiImg,
+      desc: "Luxury Escape",
+      price: "₹45,999",
     },
+
     {
-      title: "Instant Booking",
-      desc: "Book flights instantly with zero delay.",
-      icon: "⚡",
+      name: "Paris",
+      image: parisImg,
+      desc: "Romantic City",
+      price: "₹62,999",
     },
+
     {
-      title: "24/7 Support",
-      desc: "We are always available for your travel help.",
-      icon: "🛟",
+      name: "Maldives",
+      image: maldivesImg,
+      desc: "Beach Paradise",
+      price: "₹39,999",
     },
+
     {
-      title: "Trusted Airlines",
-      desc: "Only verified and trusted airline partners.",
-      icon: "✈️",
+      name: "London",
+      image: londonImg,
+      desc: "Royal Experience",
+      price: "₹70,999",
+    },
+
+    {
+      name: "Tokyo",
+      image: tokyoImg,
+      desc: "Future City",
+      price: "₹85,999",
+    },
+
+    {
+      name: "India",
+      image: indiaImg,
+      desc: "Cultural Heritage",
+      price: "₹9,999",
     },
   ];
 
+  const whyChoose = [
+    {
+      title: "Best Price",
+      desc: "Affordable luxury travel deals.",
+      icon: <BadgeDollarSign size={26} />,
+    },
+
+    {
+      title: "Fast Booking",
+      desc: "Instant and secure reservations.",
+      icon: <Zap size={26} />,
+    },
+
+    {
+      title: "24/7 Support",
+      desc: "Always here for your journey.",
+      icon: <Headphones size={26} />,
+    },
+
+    {
+      title: "Trusted Flights",
+      desc: "Verified airline partnerships.",
+      icon: <ShieldCheck size={26} />,
+    },
+  ];
 
   return (
-    <div className="min-h-screen bg-slate-950 text-white">
+
+    <div className="min-h-screen bg-black text-white overflow-hidden relative">
+
+      {/* PREMIUM GLOW */}
+      <div className="absolute top-[-200px] left-[-200px] w-[500px] h-[500px] bg-sky-500/10 blur-[140px] rounded-full"></div>
+
+      <div className="absolute bottom-[-250px] right-[-200px] w-[500px] h-[500px] bg-cyan-500/10 blur-[140px] rounded-full"></div>
+
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(56,189,248,0.08),transparent_40%)]"></div>
 
       {/* HERO */}
-    
-      <section className="pt-28 pb-10 text-center">
-        
-        <p className="text-2xl sm:text-3xl font-semibold">
-          Explore Destinations 🌍
+      <section className="relative pt-28 sm:pt-32 pb-16 sm:pb-20 px-4 text-center mt-8">
+
+        <div className="flex justify-center items-center gap-2 mb-4">
+
+          <Plane className="text-sky-400" size={16} />
+
+          <p className="uppercase tracking-[4px] text-sky-300 text-[10px] sm:text-xs">
+            Premium Travel Destinations
+          </p>
+
+        </div>
+
+        <h1 className="text-[clamp(2rem,6vw,4rem)] leading-[1.05] font-light max-w-6xl mx-auto">
+
+          Discover The World's Most
+
+          <span className="block font-semibold bg-gradient-to-r from-sky-400 via-cyan-300 to-white bg-clip-text text-transparent">
+            Luxury Destinations
+          </span>
+
+        </h1>
+
+        <p className="text-white/50 text-sm sm:text-base max-w-2xl mx-auto mt-6 leading-relaxed px-2">
+          Explore breathtaking destinations with Fly Ronex.
+          Premium journeys, luxury stays, and unforgettable travel experiences crafted for modern travelers.
         </p>
-        
-        <p className="text-white/50 text-xs mt-2 ">
-          Premium travel experiences
-        </p>
+
       </section>
-     
 
-      {/* GRID */}
-    
-      <section className="pb-20 flex justify-center">
-        <div className="w-full max-w-6xl px-4">
+      {/* DESTINATIONS */}
+      <section className="relative pb-24 px-4 flex justify-center">
 
-          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-5 place-items-center">
+        <div className="w-full max-w-7xl">
+
+          {/* RESPONSIVE GRID */}
+          <div className="grid grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-8">
 
             {destinations.map((item, i) => (
+
               <div
                 key={i}
                 className="
-                  w-full max-w-[230px]
-                  h-[200px]
+                  group
+                  relative
+                  rounded-[24px] sm:rounded-[32px]
+                  overflow-hidden
 
-                  relative overflow-hidden
-                  rounded-xl
                   border border-white/10
+                  bg-white/[0.04]
 
-                  flex flex-col
+                  backdrop-blur-2xl
 
-                  shadow-[0_6px_20px_rgba(0,0,0,0.35)]
-                  hover:scale-[1.03]
-                  hover:border-sky-400/30
+                  shadow-[0_15px_50px_rgba(0,0,0,0.45)]
 
-                  transition-all duration-300
+                  hover:-translate-y-2 sm:hover:-translate-y-3
+                  hover:border-sky-400/40
+
+                  transition-all duration-500
                 "
               >
 
-                {/* IMAGE (FIXED BRIGHTNESS) */}
-                <div className="absolute inset-0">
+                {/* IMAGE */}
+                <div className="relative h-[270px] sm:h-[420px] overflow-hidden">
+
                   <img
                     src={item.image}
                     alt={item.name}
                     loading="lazy"
                     decoding="async"
-                    className="w-full h-full object-cover opacity-60"
+                    className="
+                      w-full
+                      h-full
+                      object-cover
+
+                      group-hover:scale-110
+
+                      transition-transform duration-700
+                    "
                   />
-                </div>
 
-                {/* SOFT OVERLAY */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/25 to-transparent" />
+                  {/* OVERLAY */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
 
-                {/* BADGE */}
-                <div className="absolute top-2 right-2 text-[11px] px-3 py-[3px] bg-sky-500/20 text-sky-300 rounded-full border border-sky-500/30">
-                  Popular
-                </div>
+                  {/* BADGE */}
+                  <div className="
+                    absolute top-3 left-3 sm:top-5 sm:left-5
 
-                {/* CONTENT WRAPPER */}
-                <div className="relative z-10 flex flex-col flex-1 px-3 py-3">
+                    flex items-center gap-1
 
-                  {/* CENTER CONTENT */}
-                  <div className="flex-1 flex flex-col items-center justify-center text-center space-y-1">
+                    px-2.5 py-1 sm:px-3 sm:py-1
 
-                    <h2 className="text-[15px] font-semibold">
-                      {item.name}
-                    </h2>
+                    rounded-full
 
-                    <p className="text-white/70 text-[12px]">
-                      {item.desc}
-                    </p>
+                    bg-black/40
+                    backdrop-blur-xl
 
-                    <div className="text-[12px] text-sky-400">
-                      {item.price}
-                    </div>
+                    border border-white/10
+
+                    text-[10px] sm:text-xs
+                    text-yellow-300
+                  ">
+
+                    <Star size={11} fill="currentColor" />
+
+                    Premium
 
                   </div>
 
-                  {/* BOTTOM BUTTON */}
-                  <button
-                    onClick={() => navigate(`/results?to=${item.name}`)}
-                    className="
-                      w-full
+                  {/* PRICE */}
+                  <div className="
+                    absolute top-3 right-3 sm:top-5 sm:right-5
 
-                      px-3 py-2 text-[12px]
+                    px-2.5 py-1 sm:px-4 sm:py-2
 
-                      bg-gradient-to-r from-sky-500 to-blue-600
-                      text-black
+                    rounded-full
 
-                      rounded-md
+                    bg-sky-500/10
+                    border border-sky-400/20
+                    backdrop-blur-xl
 
-                      hover:from-sky-400 hover:to-sky-500
-                      transition
-                    "
-                  >
-                    Explore
-                  </button>
+                    text-sky-300
+                    text-[10px] sm:text-sm
+                    font-medium
+                  ">
+                    {item.price}
+                  </div>
+
+                  {/* CONTENT */}
+                  <div className="absolute bottom-0 left-0 w-full p-3 sm:p-7">
+
+                    <div className="flex items-center gap-2 text-sky-300 text-[11px] sm:text-sm mb-2 sm:mb-3">
+
+                      <MapPin size={13} />
+
+                      <span>{item.desc}</span>
+
+                    </div>
+
+                    <h2 className="text-lg sm:text-3xl font-semibold tracking-wide">
+                      {item.name}
+                    </h2>
+
+                    {/* BUTTON */}
+                    <button
+                      onClick={() => navigate("/contact")}
+                      className="
+                        mt-3 sm:mt-6
+
+                        w-full
+
+                        flex
+                        items-center
+                        justify-center
+                        gap-2
+
+                        py-2.5 sm:py-4
+
+                        rounded-xl sm:rounded-2xl
+
+                        bg-gradient-to-r
+                        from-sky-500
+                        via-cyan-400
+                        to-sky-300
+
+                        text-black
+                        text-xs sm:text-base
+                        font-semibold
+
+                        hover:scale-[1.02]
+
+                        transition-all duration-300
+                      "
+                    >
+
+                      Explore
+
+                      <ArrowRight size={16} />
+
+                    </button>
+
+                  </div>
 
                 </div>
 
               </div>
+
             ))}
 
           </div>
 
         </div>
+
       </section>
-   
 
-       {/* WHY CHOOSE US SECTION (INSIDE PAGE) */}
-      <section className="pb-20 flex justify-center">
-        <div className="w-full max-w-6xl px-4">
+      {/* WHY CHOOSE */}
+      <section className="relative pb-24 px-4 flex justify-center">
 
-          <div className="text-center mb-10 space-y-2 flex flex-col gap-3">
-            <h2 className="text-xl sm:text-2xl font-semibold">
-              Why Choose FlyRonex ✨
-            </h2>
-            <p className="text-white/50 text-xs sm:text-sm ">
-              Smooth, fast & premium travel experience
+        <div className="w-full max-w-7xl">
+
+          {/* HEADER */}
+          <div className="text-center mb-14 sm:mb-16">
+
+            <p className="uppercase tracking-[4px] text-sky-300 text-[10px] sm:text-xs mb-4">
+              Why Fly Ronex
             </p>
+
+            <h2 className="text-3xl sm:text-5xl font-semibold leading-tight">
+
+              Premium Experience
+
+              <span className="block text-sky-400 mt-2">
+                Built For Travelers
+              </span>
+
+            </h2>
+
+            <p className="text-white/50 text-sm sm:text-base max-w-2xl mx-auto mt-5 leading-relaxed px-2">
+              We combine luxury, comfort, speed, and reliability
+              to make every journey unforgettable.
+            </p>
+
           </div>
-        
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 ">
+
+          {/* GRID */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 sm:gap-7">
 
             {whyChoose.map((item, i) => (
+
               <div
                 key={i}
                 className="
-                  bg-white/5
+                  relative
+
+                  overflow-hidden
+
+                  rounded-[24px] sm:rounded-[30px]
+
                   border border-white/10
-                  rounded-xl
-                  p-5
-                  text-center
 
-                  hover:bg-white/10
+                  bg-white/[0.04]
+
+                  backdrop-blur-2xl
+
+                  p-6 sm:p-8
+
                   hover:border-sky-400/30
-                  hover:scale-[1.03]
+                  hover:-translate-y-2
 
-                  transition
+                  transition-all duration-500
                 "
               >
-                <div className="text-2xl mb-3 mt-3">{item.icon}</div>
-                <h3 className="text-sm font-semibold mb-2">{item.title}</h3>
-                <p className="text-white/50 text-xs ">{item.desc}</p>
+
+                {/* GLOW */}
+                <div className="absolute -top-16 -right-16 w-40 h-40 bg-sky-500/10 blur-[90px] rounded-full"></div>
+
+                {/* ICON */}
+                <div className="
+                  w-12 h-12 sm:w-14 sm:h-14
+
+                  rounded-2xl
+
+                  bg-sky-500/10
+                  border border-sky-400/20
+
+                  flex items-center justify-center
+
+                  text-sky-400
+
+                  mb-5
+                ">
+                  {item.icon}
+                </div>
+
+                {/* TITLE */}
+                <h3 className="text-lg sm:text-xl font-semibold mb-3">
+                  {item.title}
+                </h3>
+
+                {/* DESC */}
+                <p className="text-white/50 text-sm leading-relaxed">
+                  {item.desc}
+                </p>
+
               </div>
+
             ))}
 
           </div>
 
         </div>
-      </section>
-      
 
+      </section>
 
     </div>
   );
