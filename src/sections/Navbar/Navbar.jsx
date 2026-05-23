@@ -203,7 +203,8 @@ const Navbar = () => {
 
                   </ul>
 
-                  <button
+                  <Link
+                  to="/contact"
                     className="
                       w-full mt-8
                       rounded-full
@@ -219,7 +220,7 @@ const Navbar = () => {
                     "
                   >
                     Book Flight
-                  </button>
+                  </Link>
 
                 </div>
 
