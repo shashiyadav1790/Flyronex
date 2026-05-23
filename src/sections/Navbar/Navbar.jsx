@@ -202,25 +202,32 @@ const Navbar = () => {
                     ))}
 
                   </ul>
+<Link
+  to="/contact"
+  className="
+    w-full mt-8
 
-                  <Link
-                  to="/contact"
-                    className="
-                      w-full mt-8
-                      rounded-full
-                      border border-sky-400/40
-                      py-3
-                      text-sm uppercase tracking-[2px]
-                      text-white
-                      bg-white/[0.03]
-                      backdrop-blur-xl
-                      hover:bg-sky-400
-                      hover:text-black
-                      transition
-                    "
-                  >
-                    Book Flight
-                  </Link>
+    flex items-center justify-center
+
+    rounded-full
+    border border-sky-400/40
+
+    py-3 px-4
+
+    text-sm uppercase tracking-[2px]
+    text-white
+
+    bg-white/[0.03]
+    backdrop-blur-xl
+
+    hover:bg-sky-400
+    hover:text-black
+
+    transition-all duration-300
+  "
+>
+  Book Flight
+</Link>
 
                 </div>
 
