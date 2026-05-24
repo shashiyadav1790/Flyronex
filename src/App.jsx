@@ -1,6 +1,7 @@
 import { Routes, Route, useLocation, } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 
+
 import Navbar from "./sections/Navbar/Navbar";
 import Footer from "./sections/Footer/Footer";
 
@@ -9,6 +10,7 @@ import Destinations from "./sections/Destinations/Destinations";
 import Packages from "./sections/Packages/Packages";
 import About from "./sections/About/About";
 import Contact from "./sections/Contact/Contact"
+import ContactButtons from "./components/Contactbutton";
 function App() {
   const location = useLocation();
 
@@ -17,6 +19,7 @@ function App() {
       {/* ✅ ALWAYS VISIBLE */}
       
       <Navbar />
+      <ContactButtons/>
 
       {/* PAGE TRANSITIONS ONLY */}
             <AnimatePresence mode="wait">
