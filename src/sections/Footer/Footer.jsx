@@ -9,15 +9,15 @@ const Footer = () => {
   ];
 
   const support = [
-    { name: "Help Center", href: "#" },
-    { name: "Contact Us", href: "#" },
+    { name: "Help Center", href: "/contact" },
+    { name: "Contact Us", href: "/contact" },
     { name: "Terms", href: "#" },
     { name: "Privacy Policy", href: "#" },
   ];
 
   const social = [
-    { icon: FaFacebookF, label: "Facebook", href: "#" },
-    { icon: FaInstagram, label: "Instagram", href: "#" },
+    { icon: FaFacebookF, label: "Facebook", href: "https://www.facebook.com/share/1N56mv8r3C" },
+    { icon: FaInstagram, label: "Instagram", href: "https://www.instagram.com/fly_ronex?igsh=Mm92YnhrMzVwZHlz" },
     { icon: FaTwitter, label: "Twitter", href: "#" },
     { icon: FaLinkedin, label: "LinkedIn", href: "#" },
   ];

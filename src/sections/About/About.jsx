@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Owner from "../../assets/destinations/owner.webp";
 export default function About() {
   return (
     <div className="bg-[#020617] text-white overflow-hidden">
@@ -88,7 +89,7 @@ export default function About() {
               ">
 
                 <img
-                  src="https://images.unsplash.com/photo-1587019158091-1a103c5dd17f?q=80&w=1170&auto=format&fit=crop"
+                  src={Owner}
                   alt="travel"
                   className="
                     w-full h-full object-cover
@@ -118,11 +119,11 @@ export default function About() {
               ">
 
                 <h3 className="text-3xl font-bold text-sky-400 mb-1">
-                  8+
+                  Founder 
                 </h3>
 
                 <p className="text-sm text-white/60">
-                  Years Experience
+                  Flyronex Travel Expert
                 </p>
 
               </div>
@@ -148,7 +149,7 @@ export default function About() {
                   mb-3
                 "
               >
-                Who We Are
+                Meet The Founder
               </p>
 
               <h2
@@ -162,9 +163,9 @@ export default function About() {
                   mb-5
                 "
               >
-                Your Journey,
+                Meet
                 <span className="text-sky-400">
-                  {" "}Our Passion
+                  {" "}The Vision Behind Flyronex
                 </span>
               </h2>
 
@@ -179,9 +180,12 @@ export default function About() {
                   mb-6
                 "
               >
-                FlyRonex is a premium travel platform designed
-                for smooth booking experiences, luxury travel,
-                and destinations worldwide.
+                FlyRonex is led by a passionate travel entrepreneur
+  dedicated to helping people discover affordable,
+  comfortable, and memorable travel experiences.
+  With a strong focus on customer satisfaction and
+  personalized service, the vision is to make every
+  journey simple and stress-free.
               </p>
 
               <p
@@ -193,8 +197,10 @@ export default function About() {
                   mb-10
                 "
               >
-                We help travelers discover the world with
-                confidence,comfort and modern travel experiences.
+      Through dedication, experience, and a customer-first
+  approach, the founder continues to build FlyRonex
+  as a trusted travel partner for individuals, families,
+  and business travelers across India.
               </p>
 
               {/* STATS */}

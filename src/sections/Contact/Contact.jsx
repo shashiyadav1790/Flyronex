@@ -181,15 +181,15 @@ const Contact = () => {
               <div className="space-y-4 text-gray-300">
 
                 <p className="flex items-center gap-2">
-                  <Mail className="text-sky-400" /> support@flyronex.com
+                  <Mail className="text-sky-400" /> flyronex@gmail.com
                 </p>
 
                 <p className="flex items-center gap-2">
-                  <Phone className="text-sky-400" /> +91 98765 43210
+                  <Phone className="text-sky-400" /> +91 9571727338
                 </p>
 
                 <p className="flex items-center gap-2">
-                  <MapPin className="text-sky-400" /> Ranchi, India
+                  <MapPin className="text-sky-400" /> Chouparan, Hazaribag India
                 </p>
 
               </div>
@@ -214,7 +214,7 @@ const Contact = () => {
     <iframe
       title="map"
       className="w-full h-64 rounded-2xl border border-white/10 grayscale-[0.2] hover:grayscale-0 transition"
-      src="https://maps.google.com/maps?q=Ranchi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+      src="https://maps.google.com/maps?q=Block%20Mod,%20Chouparan,%20Jharkhand%20825406&t=&z=15&ie=UTF8&iwloc=&output=embed"
     ></iframe>
   </div>
 
