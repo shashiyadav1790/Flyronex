@@ -1,15 +1,10 @@
 import { useNavigate } from "react-router-dom";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
-
 import dubaiImg from "../../assets/destinations/dubai.webp";
 import parisImg from "../../assets/destinations/paris.webp";
 import maldivesImg from "../../assets/destinations/maldives.webp";
 import londonImg from "../../assets/destinations/london.webp";
 
-import "swiper/css";
-import "swiper/css/pagination";
+
 
 export default function Packages() {
   const navigate = useNavigate();
@@ -83,33 +78,16 @@ export default function Packages() {
 
       </section>
 
-      {/* SWIPER */}
-      <section className="pb-24 flex justify-center px-4">
 
-        <div className="w-full max-w-6xl">
+      <div className="space-y-8">
+  {packages.map((item, i) => (
+    <div key={i} className="flex justify-center">
 
-          <Swiper
-            modules={[Pagination, Autoplay]}
-            spaceBetween={30}
-            slidesPerView={1}
-            centeredSlides={true}
-            loop={true}
-            pagination={{ clickable: true }}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: true,
-            }}
-            speed={1000}
-            grabCursor={true}
-            className="w-full"
-          >
+      {/* YAHAN SWIPERSLIDE KE ANDAR WALA PURA CARD
+          BINA EK BHI CLASS CHANGE KIYE PASTE KARO */}
 
-            {packages.map((item, i) => (
 
-              <SwiperSlide key={i}>
-
-                <div className="flex justify-center">
+          <div className="flex justify-center">
 
                   <div
                     className="
@@ -265,15 +243,17 @@ export default function Packages() {
 
                 </div>
 
-              </SwiperSlide>
+    </div>
+  ))}
+</div>
 
-            ))}
 
-          </Swiper>
 
-        </div>
 
-      </section>
+
+
+
+      
 
       {/* OFFERS */}
       <section className="pb-24 px-4">
