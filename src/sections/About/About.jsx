@@ -319,7 +319,7 @@ group-hover:scale-110
 
 
               <div className="md:col-span-2 text-gray-300 leading-relaxed mb-8">
-                <p className="mb-4 font-bold text-white/30"> 
+                <p className="mb-4 font-bold text-white/70"> 
                    Fly Ronex was founded with a vision to make travel simple, affordable, and unforgettable. Led by founder & ceo Abhishek Singh.
                 </p>
 
