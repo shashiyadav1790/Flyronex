@@ -256,7 +256,7 @@ group-hover:scale-110
                 bg-[#0f172a]/90
                 backdrop-blur-sm
                 border border-white/10
-                rounded-2xl
+                rounded-5xl
                 p-2
                 shadow-2xl
                 transition-all duration-500
