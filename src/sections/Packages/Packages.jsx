@@ -49,8 +49,8 @@ export default function Packages() {
 
       {/* BACKGROUND GLOW */}
       <div className="fixed inset-0 -z-10">
-        <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-sky-500/10 blur-[120px]" />
-        <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-purple-500/10 blur-[120px]" />
+        <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-sky-500/10 blur-[60px]" />
+        <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-purple-500/10 blur-[60px]" />
       </div>
 
       {/* HERO */}
@@ -79,9 +79,9 @@ export default function Packages() {
       </section>
 
 
-      <div className="space-y-8">
+     <div className="grid grid-cols-2 gap-4 lg:grid-cols-2 lg:gap-8 max-w-7xl mx-auto px-4">
   {packages.map((item, i) => (
-    <div key={i} className="flex justify-center">
+    <div key={i} >
 
       {/* YAHAN SWIPERSLIDE KE ANDAR WALA PURA CARD
           BINA EK BHI CLASS CHANGE KIYE PASTE KARO */}
@@ -92,10 +92,10 @@ export default function Packages() {
                   <div
                     className="
                       relative overflow-hidden
-                      w-full max-w-5xl
+                      w-full
                       rounded-[32px]
                       border border-white/10
-                      bg-white/5 backdrop-blur-2xl
+                      bg-white/5 backdrop-blur-md
 
                       shadow-[0_20px_80px_rgba(0,0,0,0.5)]
 
@@ -121,7 +121,7 @@ export default function Packages() {
                       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
 
                       {/* TAG */}
-                      <div className="absolute top-5 left-5 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-xl border border-white/10 text-xs uppercase tracking-[2px] text-sky-300">
+                      <div className="absolute top-5 left-5 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 text-xs uppercase tracking-[2px] text-sky-300">
                         {item.tag}
                       </div>
 
@@ -286,7 +286,7 @@ export default function Packages() {
                 relative overflow-hidden
                 rounded-[32px]
                 border border-white/10
-                bg-white/5 backdrop-blur-2xl
+                bg-white/5 backdrop-blur-md
 
                 p-8 sm:p-10
 
@@ -297,7 +297,7 @@ export default function Packages() {
               "
             >
 
-              <div className="absolute -top-20 -right-20 w-72 h-72 bg-sky-500/10 blur-[120px]" />
+              <div className="absolute -top-20 -right-20 w-72 h-72 bg-sky-500/10 blur-[60px]" />
 
               <div className="relative z-10 space-y-5">
 
@@ -354,7 +354,7 @@ export default function Packages() {
                 relative overflow-hidden
                 rounded-[32px]
                 border border-white/10
-                bg-white/5 backdrop-blur-2xl
+                bg-white/5 backdrop-blur-md
 
                 p-8 sm:p-10
 
@@ -365,7 +365,7 @@ export default function Packages() {
               "
             >
 
-              <div className="absolute -bottom-20 -left-20 w-72 h-72 bg-purple-500/10 blur-[120px]" />
+              <div className="absolute -bottom-20 -left-20 w-72 h-72 bg-purple-500/10 blur-[60px]" />
 
               <div className="relative z-10 space-y-5">
 

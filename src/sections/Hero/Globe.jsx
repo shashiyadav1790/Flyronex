@@ -74,7 +74,7 @@ export default function GlobeBackground() {
       />
 
       {/* 🌌 Glow Effect */}
-      <div className="absolute inset-0 bg-sky-500/5 blur-[120px] pointer-events-none"></div>
+      <div className="absolute inset-0 bg-sky-500/5 blur-[60px] pointer-events-none"></div>
 
     </div>
   );

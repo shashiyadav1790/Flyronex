@@ -64,9 +64,9 @@ const Hero = () => {
      
 
       {/* Glow Effects */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-sky-500/20 blur-[120px] rounded-full"></div>
+      <div className="absolute top-20 left-10 w-72 h-72 bg-sky-500/20 blur-[60px] rounded-full"></div>
 
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/20 blur-[120px] rounded-full"></div>
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/20 blur-[60px] rounded-full"></div>
 
       {/* Plane 1 */}
       <img
@@ -243,7 +243,7 @@ const Hero = () => {
               border-white/15
               rounded-2xl
               p-5
-              backdrop-blur-xl
+              backdrop-blur-sm
               shadow-[0_8px_32px_rgba(0,0,0,0.3)]
               hover:bg-white/10
               hover:border-sky-400
@@ -310,7 +310,7 @@ const Hero = () => {
                 text-white/70
                 text-xs
                 text-center
-                backdrop-blur-xl
+                backdrop-blur-sm
                 hover:bg-white/10
                 hover:border-sky-400
                 hover:text-white

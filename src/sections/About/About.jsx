@@ -108,7 +108,7 @@ export default function About() {
                 -bottom-6
                 right-2 sm:right-0
                 bg-[#0f172a]/90
-                backdrop-blur-xl
+                backdrop-blur-sm
                 border border-white/10
                 rounded-2xl
                 p-3

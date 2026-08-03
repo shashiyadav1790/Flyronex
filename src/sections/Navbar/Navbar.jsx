@@ -46,7 +46,7 @@ const Navbar = () => {
 
             ${
               scrolled
-                ? "bg-black/50 backdrop-blur-2xl border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.35)]"
+                ? "bg-black/50 backdrop-blur-md border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.35)]"
                 : "bg-transparent border-transparent"
             }
           `}
@@ -117,7 +117,7 @@ const Navbar = () => {
                 text-sm uppercase tracking-[2px]
                 text-white
                 bg-white/[0.03]
-                backdrop-blur-xl
+                backdrop-blur-sm
                 transition-all duration-500
                 hover:border-sky-400
                 hover:shadow-[0_0_30px_rgba(56,189,248,0.35)]
@@ -173,7 +173,7 @@ const Navbar = () => {
                 <div
                   className="
                     bg-black/60
-                    backdrop-blur-2xl
+                    backdrop-blur-md
                     rounded-2xl
                     p-5
                     border border-white/10
@@ -218,7 +218,7 @@ const Navbar = () => {
     text-white
 
     bg-white/[0.03]
-    backdrop-blur-xl
+    backdrop-blur-sm
 
     hover:bg-sky-400
     hover:text-black

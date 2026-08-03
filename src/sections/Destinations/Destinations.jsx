@@ -154,7 +154,7 @@ export default function Destinations() {
                   border border-white/10
                   bg-white/[0.04]
 
-                  backdrop-blur-2xl
+                  backdrop-blur-md
 
                   shadow-[0_15px_50px_rgba(0,0,0,0.45)]
 
@@ -198,7 +198,7 @@ export default function Destinations() {
                     rounded-full
 
                     bg-black/40
-                    backdrop-blur-xl
+                    backdrop-blur-sm
 
                     border border-white/10
 
@@ -222,7 +222,7 @@ export default function Destinations() {
 
                     bg-sky-500/10
                     border border-sky-400/20
-                    backdrop-blur-xl
+                    backdrop-blur-sm
 
                     text-sky-300
                     text-[10px] sm:text-sm
@@ -345,7 +345,7 @@ export default function Destinations() {
 
                   bg-white/[0.04]
 
-                  backdrop-blur-2xl
+                  backdrop-blur-md
 
                   p-6 sm:p-8
 

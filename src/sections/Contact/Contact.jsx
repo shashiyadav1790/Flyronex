@@ -103,7 +103,7 @@ const Contact = () => {
         <section className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 pb-20">
 
           {/* FORM CARD */}
-          <div className="bg-white/5 border border-white/10 backdrop-blur-2xl rounded-3xl p-8 shadow-[0_0_60px_rgba(0,0,0,0.4)]">
+          <div className="bg-white/5 border border-white/10 backdrop-blur-md rounded-3xl p-8 shadow-[0_0_60px_rgba(0,0,0,0.4)]">
 
             <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 ">
               <Send className="text-sky-400" />
@@ -173,7 +173,7 @@ const Contact = () => {
           {/* INFO CARD */}
           <div className="space-y-6">
 
-            <div className="bg-white/5 border border-white/10 backdrop-blur-2xl rounded-3xl p-8">
+            <div className="bg-white/5 border border-white/10 backdrop-blur-md rounded-3xl p-8">
               <h2 className="text-xl font-semibold mb-4 text-sky-400">
                 Contact Info
               </h2>
@@ -195,7 +195,7 @@ const Contact = () => {
               </div>
             </div>
 
-           <div className="bg-white/5 border border-white/10 backdrop-blur-2xl rounded-3xl overflow-hidden shadow-xl hover:border-sky-400/30 transition">
+           <div className="bg-white/5 border border-white/10 backdrop-blur-md rounded-3xl overflow-hidden shadow-xl hover:border-sky-400/30 transition">
 
   {/* HEADER */}
   <div className="p-6 border-b border-white/10">

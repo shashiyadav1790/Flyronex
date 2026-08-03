@@ -92,7 +92,7 @@ export default function TestimonialSlider() {
                   className="
                     bg-sky-500/10
                     border border-white/10
-                    backdrop-blur-2xl
+                    backdrop-blur-md
                     rounded-3xl
                     p-5 sm:p-8
                     
