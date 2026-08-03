@@ -11,60 +11,113 @@ import {
   Zap,
 } from "lucide-react";
 
+
+
 import dubaiImg from "../../assets/destinations/dubai.webp";
 import parisImg from "../../assets/destinations/paris.webp";
 import maldivesImg from "../../assets/destinations/maldives.webp";
 import londonImg from "../../assets/destinations/london.webp";
-import tokyoImg from "../../assets/destinations/tokyo.webp";
-import indiaImg from "../../assets/destinations/india.webp";
+
+import shimlaImg from "../../assets/destinations/shimla.webp";
+import kashmirImg from "../../assets/destinations/kashmir.webp";
+import goaImg from "../../assets/destinations/goa.webp";
+import ladakhImg from "../../assets/destinations/ladakh.webp";
+import andamanImg from "../../assets/destinations/andaman.webp";
+import thailandImg from "../../assets/destinations/thailand.webp";
+import vietnamImg from "../../assets/destinations/vietnam.webp";
+import baliImg from "../../assets/destinations/bali.webp";
+
+
 
 export default function Destinations() {
 
   const navigate = useNavigate();
 
   const destinations = [
-    {
-      name: "Dubai",
-      image: dubaiImg,
-      desc: "Luxury Escape",
-      price: "₹45,999",
-    },
+  {
+    name: "Dubai",
+    image: dubaiImg,
+    desc: "Luxury Escape",
+    price: "₹45,999",
+  },
 
-    {
-      name: "Paris",
-      image: parisImg,
-      desc: "Romantic City",
-      price: "₹62,999",
-    },
+  {
+    name: "Delhi • Shimla • Manali",
+    image: shimlaImg,
+    desc: "Mountain Paradise",
+    price: "₹11,999",
+  },
 
-    {
-      name: "Maldives",
-      image: maldivesImg,
-      desc: "Beach Paradise",
-      price: "₹39,999",
-    },
+  {
+    name: "Kashmir",
+    image: kashmirImg,
+    desc: "Heaven on Earth",
+    price: "₹14,999",
+  },
 
-    {
-      name: "London",
-      image: londonImg,
-      desc: "Royal Experience",
-      price: "₹70,999",
-    },
+  {
+    name: "Goa",
+    image: goaImg,
+    desc: "Beach Holiday",
+    price: "₹12,999",
+  },
 
-    {
-      name: "Tokyo",
-      image: tokyoImg,
-      desc: "Future City",
-      price: "₹85,999",
-    },
+  {
+    name: "Ladakh",
+    image: ladakhImg,
+    desc: "Adventure Destination",
+    price: "₹25,999",
+  },
 
-    {
-      name: "India",
-      image: indiaImg,
-      desc: "Cultural Heritage",
-      price: "₹9,999",
-    },
-  ];
+  {
+    name: "Andaman",
+    image: andamanImg,
+    desc: "Island Escape",
+    price: "₹21,999",
+  },
+
+  {
+    name: "Thailand",
+    image: thailandImg,
+    desc: "International Getaway",
+    price: "₹19,999",
+  },
+
+  {
+    name: "Vietnam",
+    image: vietnamImg,
+    desc: "Nature & Culture",
+    price: "₹21,999",
+  },
+
+  {
+    name: "Bali",
+    image: baliImg,
+    desc: "Luxury Island",
+    price: "₹29,999",
+  },
+
+  {
+    name: "Paris",
+    image: parisImg,
+    desc: "Romantic City",
+    price: "₹62,999",
+  },
+
+  {
+    name: "Maldives",
+    image: maldivesImg,
+    desc: "Beach Paradise",
+    price: "₹39,999",
+  },
+
+  {
+    name: "London",
+    image: londonImg,
+    desc: "Royal Experience",
+    price: "₹70,999",
+  },
+];
 
   const whyChoose = [
     {

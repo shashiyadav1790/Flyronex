@@ -119,11 +119,11 @@ export default function About() {
               ">
 
                 <h3 className="text-3xl font-bold text-sky-400 mb-1">
-                  Founder 
+                  Owner
                 </h3>
 
                 <p className="text-sm text-white/60">
-                  Flyronex Travel Expert
+                  Abhishek Singh
                 </p>
 
               </div>

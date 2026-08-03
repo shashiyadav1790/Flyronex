@@ -1,8 +1,16 @@
 import { useNavigate } from "react-router-dom";
 import dubaiImg from "../../assets/destinations/dubai.webp";
-import parisImg from "../../assets/destinations/paris.webp";
 import maldivesImg from "../../assets/destinations/maldives.webp";
-import londonImg from "../../assets/destinations/london.webp";
+
+
+import shimlaImg from "../../assets/destinations/shimla.webp";
+import kashmirImg from "../../assets/destinations/kashmir.webp";
+import goaImg from "../../assets/destinations/goa.webp";
+import ladakhImg from "../../assets/destinations/ladakh.webp";
+import andamanImg from "../../assets/destinations/andaman.webp";
+import thailandImg from "../../assets/destinations/thailand.webp";
+import vietnamImg from "../../assets/destinations/vietnam.webp";
+import baliImg from "../../assets/destinations/bali.webp";
 
 
 
@@ -10,39 +18,100 @@ export default function Packages() {
   const navigate = useNavigate();
 
   const packages = [
-    {
-      name: "Dubai Luxury Package",
-      image: dubaiImg,
-      duration: "5D / 4N",
-      price: "₹79,999",
-      includes: "Flight + 5★ Hotel + Desert Safari",
-      tag: "Luxury",
-    },
-    {
-      name: "Paris Honeymoon Package",
-      image: parisImg,
-      duration: "6D / 5N",
-      price: "₹99,999",
-      includes: "Eiffel View Hotel + Cruise Dinner",
-      tag: "Honeymoon",
-    },
-    {
-      name: "Maldives Beach Package",
-      image: maldivesImg,
-      duration: "4D / 3N",
-      price: "₹69,999",
-      includes: "Water Villa + Private Beach",
-      tag: "Beach",
-    },
-    {
-      name: "London Luxury Package",
-      image: londonImg,
-      duration: "4D / 3N",
-      price: "₹82,999",
-      includes: "Luxury Hotel + City Tour",
-      tag: "Premium",
-    },
-  ];
+  {
+    name: "Dubai Luxury Package",
+    image: dubaiImg,
+    duration: "5D / 4N",
+    price: "₹79,999",
+    includes: "Flight + 5★ Hotel + Desert Safari",
+    tag: "Luxury",
+  },
+
+  {
+    name: "Delhi - Shimla - Manali",
+    image: shimlaImg,
+    duration: "5D / 4N",
+    price: "₹11,999",
+    includes: "Hotel + Sightseeing + Volvo",
+    tag: "Domestic",
+  },
+
+  {
+    name: "Kashmir Paradise",
+    image: kashmirImg,
+    duration: "5D / 4N",
+    price: "₹14,999",
+    includes: "Hotel + Local Sightseeing",
+    tag: "Popular",
+  },
+
+  {
+    name: "Goa Holiday Package",
+    image: goaImg,
+    duration: "4D / 3N",
+    price: "₹12,999",
+    includes: "Beach Stay + Breakfast",
+    tag: "Beach",
+  },
+
+  {
+    name: "Ladakh Adventure",
+    image: ladakhImg,
+    duration: "6D / 5N",
+    price: "₹25,999",
+    includes: "Hotel + Bike Ride + Sightseeing",
+    tag: "Adventure",
+  },
+
+  {
+    name: "Andaman Island",
+    image: andamanImg,
+    duration: "5D / 4N",
+    price: "₹21,999",
+    includes: "Hotel + Ferry + Beach Tour",
+    tag: "Island",
+  },
+
+  {
+    name: "Thailand Tour",
+    image: thailandImg,
+    duration: "5D / 4N",
+    price: "₹19,999",
+    includes: "Flight + Hotel + City Tour",
+    tag: "International",
+  },
+
+  {
+    name: "Vietnam Explorer",
+    image: vietnamImg,
+    duration: "5D / 4N",
+    price: "₹21,999",
+    includes: "Hotel + Cruise + Sightseeing",
+    tag: "International",
+  },
+
+  {
+    name: "Bali Luxury Escape",
+    image: baliImg,
+    duration: "5D / 4N",
+    price: "₹29,999",
+    includes: "Villa + Breakfast + Tour",
+    tag: "Luxury",
+  },
+
+  
+
+  {
+    name: "Maldives Beach Package",
+    image: maldivesImg,
+    duration: "4D / 3N",
+    price: "₹69,999",
+    includes: "Water Villa + Private Beach",
+    tag: "Beach",
+  },
+
+  
+];
 
   return (
     <div className="min-h-screen bg-slate-950 text-white overflow-hidden">
@@ -79,7 +148,10 @@ export default function Packages() {
       </section>
 
 
-     <div className="grid grid-cols-2 gap-4 lg:grid-cols-2 lg:gap-8 max-w-7xl mx-auto px-4">
+     <section className="pb-24 px-4">
+
+  <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+
   {packages.map((item, i) => (
     <div key={i} >
 
@@ -87,7 +159,7 @@ export default function Packages() {
           BINA EK BHI CLASS CHANGE KIYE PASTE KARO */}
 
 
-          <div className="flex justify-center">
+        
 
                   <div
                     className="
@@ -100,6 +172,7 @@ export default function Packages() {
                       shadow-[0_20px_80px_rgba(0,0,0,0.5)]
 
                       grid lg:grid-cols-2
+                      h-full
                     "
                   >
 
@@ -242,10 +315,10 @@ export default function Packages() {
                   </div>
 
                 </div>
-
-    </div>
   ))}
-</div>
+  </div>
+</section>
+
 
 
 
