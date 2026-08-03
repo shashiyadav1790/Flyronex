@@ -256,7 +256,7 @@ group-hover:scale-110
                 bg-[#0f172a]/90
                 backdrop-blur-sm
                 border border-white/10
-                rounded-5xl
+                rounded-2xl
                 p-2
                 shadow-2xl
                 transition-all duration-500
@@ -264,7 +264,7 @@ group-hover:scale-110
                 group-hover:border-sky-400/30
               ">
 
-                <h3 className="text-xl font-bold text-sky-400 mb-1">
+                <h3 className="text-lg font-bold text-sky-400 mb-1">
                   Founder & CEO
 
                 </h3>
@@ -316,31 +316,39 @@ group-hover:scale-110
 </span>
               </h2>
 
-              <p
-                className="
-                  text-white/60
-                  text-sm
-                  leading-8
-                  max-w-xl
-                  mx-auto lg:mx-0
-                  text-center lg:text-left
-                  mb-6
-                "
-              >
-               Fly Ronex was founded with a vision to make travel simple, affordable, and unforgettable. Led by founder Abhishek Singh, our mission is to provide trusted domestic and international tour packages, flight bookings, and premium travel experiences tailored for every traveler.
-              </p>
 
-              <p
-                className="
-                  text-white/60
-                  text-sm sm:text-base
-                  leading-8
-                  max-w-xl
-                  mb-10
-                "
-              >
-     Today, Fly Ronex proudly serves travelers across India with carefully planned holidays, luxury vacations, honeymoon packages, family tours, corporate travel, and international destinations. Our commitment to customer satisfaction and transparent pricing makes every journey stress-free.
-              </p>
+
+              <div className="md:col-span-2 text-gray-300 leading-relaxed mb-8">
+                <p className="mb-4 font-bold"> 
+                   Fly Ronex was founded with a vision to make travel simple, affordable, and unforgettable. Led by founder Abhishek Singh.
+                </p>
+
+                  <details>
+                  <summary className="cursor-pointer text-yellow-400 font-semibold">
+                    Read Full Message
+                  </summary>
+
+                  <p className="mt-4">
+  Our mission is to provide trusted domestic and international tour packages, flight bookings, and premium travel experiences tailored for every traveler.
+                    
+                     <br /><br />
+                Today, Fly Ronex proudly serves travelers across India with carefully planned holidays
+                    <br /><br />
+                 luxury vacations, honeymoon packages, family tours, corporate travel, and international destinations. Our commitment to customer satisfaction and transparent
+                    <br /><br />
+                  </p>
+                </details>
+              </div>
+
+
+
+
+
+
+
+
+
+
 
               {/* STATS */}
               <div
