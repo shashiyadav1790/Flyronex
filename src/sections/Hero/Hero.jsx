@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import plane from "../../assets/airplane.png";
 import Comment from "./Comment";
-// import Globe from "./Globe";
+import Globe from "./Globe";
 import { Link } from "react-router-dom";
 const Hero = () => {
 
@@ -59,7 +59,7 @@ const Hero = () => {
 
       
 
-       {/* <Globe/> */}
+        <Globe/> 
       
      
 
