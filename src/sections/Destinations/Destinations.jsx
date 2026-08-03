@@ -42,7 +42,7 @@ export default function Destinations() {
   },
 
   {
-    name: "Delhi • Shimla • Manali",
+    name: "Shimla",
     image: shimlaImg,
     desc: "Mountain Paradise",
     price: "₹11,999",
