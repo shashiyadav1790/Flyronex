@@ -1,7 +1,147 @@
 import { Link } from "react-router-dom";
-import Owner from "../../assets/destinations/owner.webp";
+import { Helmet } from "react-helmet-async";
+import Owner from "../../assets/destinations/abhishek-singh-founder-flyronex.webp";
+
+
 export default function About() {
   return (
+
+    <>
+<Helmet>
+
+<title>
+About Fly Ronex | Meet Founder Abhishek Singh | Premium Travel Agency
+</title>
+
+<meta
+name="description"
+content="Learn about Fly Ronex and its founder Abhishek Singh. Discover our mission to provide premium domestic and international travel experiences with affordable tour packages."
+/>
+
+<meta
+name="keywords"
+content="
+Fly Ronex,
+About Fly Ronex,
+Abhishek Singh,
+Founder Fly Ronex,
+Travel Agency India,
+Domestic Tour Packages,
+International Tour Packages,
+Flight Booking,
+Holiday Packages,
+Luxury Travel,
+Travel Company India
+"
+/>
+
+<meta name="robots" content="index,follow"/>
+
+<link
+rel="canonical"
+href="https://flyronex.com/about"
+/>
+
+<meta property="og:type" content="website"/>
+
+<meta
+property="og:title"
+content="About Fly Ronex | Premium Travel Agency"
+/>
+
+<meta
+property="og:description"
+content="Meet the founder of Fly Ronex and discover premium domestic & international travel experiences."
+/>
+
+<meta
+property="og:url"
+content="https://flyronex.com/about"
+/>
+
+<meta
+property="og:image"
+content="https://flyronex.com/abhishek-singh-founder-flyronex.webp"
+/>
+
+<meta
+name="twitter:card"
+content="summary_large_image"
+/>
+
+<meta
+name="twitter:title"
+content="About Fly Ronex"
+/>
+
+<meta
+name="twitter:description"
+content="Meet the Founder of Fly Ronex and explore our premium travel services."
+/>
+
+<meta
+name="twitter:image"
+content="https://flyronex.com/abhishek-singh-founder-flyronex.webp"
+/>
+
+{/* Organization Schema */}
+
+<script type="application/ld+json">
+{`
+{
+"@context":"https://schema.org",
+"@type":"TravelAgency",
+
+"name":"Fly Ronex",
+
+"url":"https://flyronex.com",
+
+"logo":"https://flyronex.com/logo.png",
+
+"image":"https://flyronex.com/abhishek-singh-founder-flyronex.webp",
+
+"description":"Premium Domestic and International Travel Agency",
+
+"telephone":"+919571727338",
+
+"email":"flyronex@gmail.com",
+
+"address":{
+"@type":"PostalAddress",
+"addressLocality":"Chouparan",
+"addressRegion":"Jharkhand",
+"addressCountry":"India"
+}
+
+}
+`}
+</script>
+
+{/* Founder Schema */}
+
+<script type="application/ld+json">
+{`
+{
+"@context":"https://schema.org",
+
+"@type":"Person",
+
+"name":"Abhishek Singh",
+
+"jobTitle":"Founder",
+
+"worksFor":{
+"@type":"TravelAgency",
+"name":"Fly Ronex"
+},
+
+"image":"https://flyronex.com/abhishek-singh-founder-flyronex.webp"
+
+}
+`}
+</script>
+
+</Helmet>
     <div className="bg-[#020617] text-white overflow-hidden">
 
       {/* CONTAINER */}
@@ -88,15 +228,21 @@ export default function About() {
                 group-hover:border-sky-400/30
               ">
 
-                <img
-                  src={Owner}
-                  alt="travel"
-                  className="
-                    w-full h-full object-cover
-                    transition-transform duration-700
-                    group-hover:scale-110
-                  "
-                />
+               <img
+src={Owner}
+alt="Abhishek Singh Founder of Fly Ronex Premium Travel Agency"
+loading="eager"
+fetchPriority="high"
+decoding="async"
+className="
+w-full
+h-full
+object-cover
+transition-transform
+duration-700
+group-hover:scale-110
+"
+/>
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
@@ -119,7 +265,8 @@ export default function About() {
               ">
 
                 <h3 className="text-3xl font-bold text-sky-400 mb-1">
-                  Owner
+                  Founder & CEO
+
                 </h3>
 
                 <p className="text-sm text-white/60">
@@ -163,10 +310,10 @@ export default function About() {
                   mb-5
                 "
               >
-                Meet
-                <span className="text-sky-400">
-                  {" "}The Vision Behind Flyronex
-                </span>
+               Meet
+<span className="text-sky-400">
+ The Founder of Fly Ronex
+</span>
               </h2>
 
               <p
@@ -180,12 +327,7 @@ export default function About() {
                   mb-6
                 "
               >
-                FlyRonex is led by a passionate travel entrepreneur
-  dedicated to helping people discover affordable,
-  comfortable, and memorable travel experiences.
-  With a strong focus on customer satisfaction and
-  personalized service, the vision is to make every
-  journey simple and stress-free.
+               Fly Ronex was founded with a vision to make travel simple, affordable, and unforgettable. Led by founder Abhishek Singh, our mission is to provide trusted domestic and international tour packages, flight bookings, and premium travel experiences tailored for every traveler.
               </p>
 
               <p
@@ -197,10 +339,7 @@ export default function About() {
                   mb-10
                 "
               >
-      Through dedication, experience, and a customer-first
-  approach, the founder continues to build FlyRonex
-  as a trusted travel partner for individuals, families,
-  and business travelers across India.
+     Today, Fly Ronex proudly serves travelers across India with carefully planned holidays, luxury vacations, honeymoon packages, family tours, corporate travel, and international destinations. Our commitment to customer satisfaction and transparent pricing makes every journey stress-free.
               </p>
 
               {/* STATS */}
@@ -231,7 +370,7 @@ export default function About() {
                   </h3>
 
                   <p className="text-white/60 text-sm">
-                    Destinations
+                    World wide Destinations
                   </p>
                 </div>
 
@@ -253,7 +392,7 @@ export default function About() {
                   </h3>
 
                   <p className="text-white/60 text-sm">
-                    Travelers
+                 Happt Customers
                   </p>
                 </div>
 
@@ -287,7 +426,7 @@ export default function About() {
               font-bold
               leading-tight
             ">
-              Travel Better With FlyRonex ✨
+              Why Thousands Trust Fly Ronex ✨
             </h2>
 
           </div>
@@ -436,7 +575,7 @@ export default function About() {
                 hover:scale-110
                 hover:shadow-[0_10px_40px_rgba(56,189,248,0.45)]
               ">
-                Explore Packages
+                Explore Tour Packages
               </button>
               </Link>
 
@@ -450,5 +589,6 @@ export default function About() {
 
       </div>
     </div>
+    </>
   );
 }
