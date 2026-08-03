@@ -257,14 +257,14 @@ group-hover:scale-110
                 backdrop-blur-sm
                 border border-white/10
                 rounded-2xl
-                p-3
+                p-2
                 shadow-2xl
                 transition-all duration-500
                 group-hover:-translate-y-2
                 group-hover:border-sky-400/30
               ">
 
-                <h3 className="text-3xl font-bold text-sky-400 mb-1">
+                <h3 className="text-xl font-bold text-sky-400 mb-1">
                   Founder & CEO
 
                 </h3>
