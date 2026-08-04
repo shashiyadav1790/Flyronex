@@ -219,7 +219,7 @@ content="https://flyronex.com/abhishek-singh-founder-flyronex.webp"
                 h-[250px]
                 sm:h-[300px]
                 md:h-[350px]
-                rounded-[30px]
+                rounded-[50px]
                 overflow-hidden
                 border border-white/10
                 shadow-[0_20px_80px_rgba(0,0,0,0.6)]
@@ -256,8 +256,8 @@ group-hover:scale-110
                 bg-[#0f172a]/90
                 backdrop-blur-sm
                 border border-white/10
-                rounded-2xl
-                p-2
+                rounded-3xl
+                p-2 
                 shadow-2xl
                 transition-all duration-500
                 group-hover:-translate-y-2

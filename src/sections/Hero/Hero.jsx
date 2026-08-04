@@ -1,9 +1,10 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import plane from "../../assets/airplane.png";
+import plane from "../../assets/airplane.webp";
 import Comment from "./Comment";
 import Globe from "./Globe";
 import { Link } from "react-router-dom";
+import FAQ from "./faq";
 const Hero = () => {
 
   const planeRef1 = useRef(null);
@@ -59,7 +60,7 @@ const Hero = () => {
 
       
 
-        <Globe/> 
+     <Globe/> 
       
      
 
@@ -336,6 +337,7 @@ const Hero = () => {
         </section>
 
         <Comment/>
+        <FAQ/>
 
 
         </div>

@@ -1,5 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import Globe from "react-globe.gl";
+import earth from "../../assets/destinations/earth.webp";
+
+
 
 export default function GlobeBackground() {
 
@@ -63,9 +66,10 @@ export default function GlobeBackground() {
         backgroundColor="rgba(0,0,0,0)"
 
         // 🌍 Earth Texture
-        globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
+        globeImageUrl={earth}
+       
 
-        bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
+        
 
         // 🌍 Atmosphere
         atmosphereColor="#38bdf8"
