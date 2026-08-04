@@ -1,42 +1,13 @@
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
-import plane from "../../assets/airplane.webp";
+
+
 import Comment from "./Comment";
-import Globe from "./Globe";
+// import Globe from "./Globe";
 import { Link } from "react-router-dom";
 import FAQ from "./faq";
 const Hero = () => {
 
-  const planeRef1 = useRef(null);
  
-
-  useEffect(() => {
-
-    const ctx = gsap.context(() => {
-
-      const width = window.innerWidth;
-
-      // Plane 1
-      gsap.set(planeRef1.current, {
-        x: width - 50,
-        y: -40,
-        scale: 0.9,
-      });
-
-      gsap.to(planeRef1.current, {
-        x: -width - 300,
-        y: -80,
-        duration: 20,
-        ease: "none",
-        repeat: -1,
-      });
-
-      
-    });
-
-    return () => ctx.revert();
-
-  }, []);
+ 
 
   return (
     
@@ -60,7 +31,7 @@ const Hero = () => {
 
       
 
-     <Globe/> 
+     {/* <Globe/>  */}
       
      
 
@@ -69,26 +40,7 @@ const Hero = () => {
 
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/20 blur-[60px] rounded-full"></div>
 
-      {/* Plane 1 */}
-      <img
-        ref={planeRef1}
-        src={plane}
-        alt="Fly Ronex airplane"
-        loading="eager"
-        decoding="async"
-        className="
-        will-change-transform
-        absolute
-        top-[9%]
-        right-[-200px]
-        w-[120px]
-        md:w-[220px]
-        lg:w-[300px]
-        pointer-events-none
-        select-none
-
-      "
-      />
+    
 
       
 

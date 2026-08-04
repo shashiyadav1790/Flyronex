@@ -1,85 +1,85 @@
-import { useEffect, useRef, useState } from "react";
-import Globe from "react-globe.gl";
-import earth from "../../assets/destinations/earth.webp";
+// import { useEffect, useRef, useState } from "react";
+// import Globe from "react-globe.gl";
+// import earth from "../../assets/destinations/earth.webp";
 
 
 
-export default function GlobeBackground() {
+// export default function GlobeBackground() {
 
-  const globeEl = useRef();
+//   const globeEl = useRef();
 
-  const [dimensions, setDimensions] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
-  });
+//   const [dimensions, setDimensions] = useState({
+//     width: window.innerWidth,
+//     height: window.innerHeight,
+//   });
 
-  // ✅ Responsive resize
-  useEffect(() => {
+//   // ✅ Responsive resize
+//   useEffect(() => {
 
-    const handleResize = () => {
+//     const handleResize = () => {
 
-      setDimensions({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
+//       setDimensions({
+//         width: window.innerWidth,
+//         height: window.innerHeight,
+//       });
 
-    };
+//     };
 
-    window.addEventListener("resize", handleResize);
+//     window.addEventListener("resize", handleResize);
 
-    return () => window.removeEventListener("resize", handleResize);
+//     return () => window.removeEventListener("resize", handleResize);
 
-  }, []);
+//   }, []);
 
-  // ✅ Globe controls
-  useEffect(() => {
+//   // ✅ Globe controls
+//   useEffect(() => {
 
-    if (!globeEl.current) return;
+//     if (!globeEl.current) return;
 
-    const controls = globeEl.current.controls();
+//     const controls = globeEl.current.controls();
 
-    // 🌍 Auto rotate
-    controls.autoRotate = true;
+//     // 🌍 Auto rotate
+//     controls.autoRotate = true;
 
-    controls.autoRotateSpeed = 1.4;
+//     controls.autoRotateSpeed = 1.4;
 
-    // 🌍 Smaller globe zoom
-    globeEl.current.pointOfView({
-      lat: 20,
-      lng: 30,
-      altitude: 3.2,
-    });
+//     // 🌍 Smaller globe zoom
+//     globeEl.current.pointOfView({
+//       lat: 20,
+//       lng: 30,
+//       altitude: 3.2,
+//     });
 
-  }, []);
+//   }, []);
 
-  return (
+//   return (
 
-    <div className="absolute inset-0 z-0 overflow-hidden opacity-90 ">
+//     <div className="absolute inset-0 z-0 overflow-hidden opacity-90 ">
 
-      {/* 🌍 GLOBE */}
-      <Globe
-        ref={globeEl}
+//       {/* 🌍 GLOBE */}
+//       <Globe
+//         ref={globeEl}
 
-        width={dimensions.width}
-        height={dimensions.height}
+//         width={dimensions.width}
+//         height={dimensions.height}
 
-        backgroundColor="rgba(0,0,0,0)"
+//         backgroundColor="rgba(0,0,0,0)"
 
-        // 🌍 Earth Texture
-        globeImageUrl={earth}
+//         // 🌍 Earth Texture
+//         globeImageUrl={earth}
        
 
         
 
-        // 🌍 Atmosphere
-        atmosphereColor="#38bdf8"
+//         // 🌍 Atmosphere
+//         atmosphereColor="#38bdf8"
 
-        atmosphereAltitude={0.18}
-      />
+//         atmosphereAltitude={0.18}
+//       />
 
-      {/* 🌌 Glow Effect */}
-      <div className="absolute inset-0 bg-sky-500/5 blur-[60px] pointer-events-none"></div>
+//       {/* 🌌 Glow Effect */}
+//       <div className="absolute inset-0 bg-sky-500/5 blur-[60px] pointer-events-none"></div>
 
-    </div>
-  );
-}
+//     </div>
+//   );
+// }
