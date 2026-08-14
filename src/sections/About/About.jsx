@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import Owner from "../../assets/destinations/abhishek-singh-founder-flyronex.webp";
+import Owner from "../../assets/destinations/abhisheksingh.webp";
 
 
 export default function About() {
@@ -209,40 +209,42 @@ content="https://flyronex.com/abhishek-singh-founder-flyronex.webp"
             items-center
           ">
 
-            {/* IMAGE */}
-            <div className="relative flex justify-center group">
+<div className="relative flex justify-center group">
+  <div
+    className="
+      relative
+      w-full
+      max-w-[420px]
+      sm:max-w-[420px]
+      md:max-w-[440px]
+      lg:max-w-[420px]
+      rounded-[50px]
+      overflow-hidden
+      border border-white/10
+      shadow-[0_20px_80px_rgba(0,0,0,0.6)]
+      transition-all duration-500
+      group-hover:scale-[1.02]
+      group-hover:border-sky-400/30
+    "
+  >
+    <img
+      src={Owner}
+      alt="Abhishek Singh Founder of Fly Ronex Premium Travel Agency"
+      loading="eager"
+      fetchPriority="high"
+      decoding="async"
+      className="
+        block
+        w-full
+        h-auto
+        object-contain
+        transition-transform
+        duration-700
+        group-hover:scale-105
+      "
+    />
 
-              <div className="
-                relative
-                w-full
-                max-w-[520px]
-                h-[250px]
-                sm:h-[300px]
-                md:h-[350px]
-                rounded-[50px]
-                overflow-hidden
-                border border-white/10
-                shadow-[0_20px_80px_rgba(0,0,0,0.6)]
-                transition-all duration-500
-                group-hover:scale-[1.02]
-                group-hover:border-sky-400/30
-              ">
-
-               <img
-src={Owner}
-alt="Abhishek Singh Founder of Fly Ronex Premium Travel Agency"
-loading="eager"
-fetchPriority="high"
-decoding="async"
-className="
-w-full
-h-full
-object-cover
-transition-transform
-duration-700
-group-hover:scale-110
-"
-/>
+ 
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 

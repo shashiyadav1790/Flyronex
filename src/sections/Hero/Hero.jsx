@@ -1,10 +1,36 @@
 
-
+import { useEffect, useState } from "react";
 import Comment from "./Comment";
 // import Globe from "./Globe";
 import { Link } from "react-router-dom";
 import FAQ from "./faq";
 const Hero = () => {
+
+  const [destinations, setDestinations] = useState(0);
+const [travelers, setTravelers] = useState(0);
+
+useEffect(() => {
+  const duration = 2000;
+  const startTime = performance.now();
+
+  const animate = (currentTime) => {
+    const progress = Math.min(
+      (currentTime - startTime) / duration,
+      1
+    );
+
+    const easeOut = 1 - Math.pow(1 - progress, 3);
+
+    setDestinations(Math.floor(500 * easeOut));
+    setTravelers(Math.floor(50000 * easeOut));
+
+    if (progress < 1) {
+      requestAnimationFrame(animate);
+    }
+  };
+
+  requestAnimationFrame(animate);
+}, []);
 
  
  
@@ -126,7 +152,7 @@ const Hero = () => {
           to="/packages"
             className="
             px-8
-            py-3
+            py-2
             rounded-full
             bg-sky-500
             text-black
@@ -146,7 +172,7 @@ const Hero = () => {
           to="/destinations"
             className="
             px-8
-            py-3
+            py-2
             rounded-full
             border
             border-white/20
@@ -177,15 +203,27 @@ const Hero = () => {
           grid-cols-2
           md:grid-cols-4
           gap-4
-          mt-4
+          mt-2
         "
         >
 
           {[
-            { num: "500+", label: "Destinations" },
-            { num: "50K+", label: "Travelers" },
-            { num: "24/7", label: "Support" },
-            { num: "Best", label: "Price" },
+            {
+    num: `${destinations}+`,
+    label: "Destinations",
+  },
+  {
+    num: `${Math.floor(travelers / 1000)}K+`,
+    label: "Travelers",
+  },
+  {
+    num: "24/7",
+    label: "Support",
+  },
+  {
+    num: "Best",
+    label: "Price",
+  },
           ].map((item, i) => (
 
             <div
