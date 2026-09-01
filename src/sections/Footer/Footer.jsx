@@ -163,30 +163,36 @@ const Footer = () => {
       
 
       {/* BOTTOM BAR */}
-      <div className="border-t border-white/10 py-6 text-center text-white/50 text-sm">
-   
-        <p>© {new Date().getFullYear()} FlyRonex. All rights reserved.</p>
-        <p className="text-white/40 text-sm leading-relaxed">
-  Developed by ❤️{" "}
+<div className="border-t border-white/10 py-6 text-center text-white/50 text-sm">
+  <p>© {new Date().getFullYear()} FlyRonex. All rights reserved.</p>
 
-  <span className="
-    text-transparent
-    bg-clip-text
-    bg-gradient-to-r
-    from-[#00F5FF]
-    via-[#38BDF8]
-    to-[#6366F1]
+  <p className="text-white/40 text-sm leading-relaxed">
+    Developed by ❤️{" "}
 
-    font-bold
-    tracking-[1px]
-
-    drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]
-  ">
-    Shashi Surya
-  </span>
-
-</p>
-      </div>
+    <a
+      href="https://sksyntax.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="
+        text-transparent
+        bg-clip-text
+        bg-gradient-to-r
+        from-[#00F5FF]
+        via-[#38BDF8]
+        to-[#6366F1]
+        font-bold
+        tracking-[1px]
+        drop-shadow-[0_0_10px_rgba(56,189,248,0.6)]
+        transition-all
+        duration-300
+        hover:brightness-125
+        hover:drop-shadow-[0_0_14px_rgba(56,189,248,0.8)]
+      "
+    >
+      SKSyntax
+    </a>
+  </p>
+</div>
       
      
 
